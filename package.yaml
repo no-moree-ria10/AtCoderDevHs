@@ -29,7 +29,6 @@ benchmarks:
     - async
     - attoparsec
     - case-insensitive
-    - cgi
     - exceptions
 #    - fgl
 #    - GLURaw
@@ -183,7 +182,6 @@ library:
     - async
     - attoparsec
     - case-insensitive
-    - cgi
     - exceptions
 #    - GLURaw
 #    - GLUT
