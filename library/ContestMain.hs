@@ -1,5 +1,7 @@
 -- extension section
-{-# LANGUAGE Strict, StrictData #-}
+
+-- not supported extension
+--{-# LANGUAGE Strict, StrictData #-}
 
 
 module ContestMain where

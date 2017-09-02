@@ -7,20 +7,6 @@ benchmarks:
     - base
     - AtCoderDevHs
     - criterion
-    - base
-    - array
-    - bytestring
-    - containers
-    - deepseq
-    - async
-    - attoparsec
-    - mtl
-    - regex-base
-    - regex-compat
-    - regex-posix
-    - stm
-    - text
-    - unordered-containers
     ghc-options:
     - -rtsopts
     - -threaded
@@ -32,28 +18,10 @@ description: AtCoderDevHs is a new Haskeleton package.
 executables:
   AtCoderDevHs:
     dependencies:
-# for test and benchmark ###
-    -  tasty
-    -  tasty-hspec
-    - criterion
-#### end  ####
-    - AtCoderDevHs
     - base
-    - array
-    - bytestring
-    - containers
-    - deepseq
-    - async
-    - attoparsec
-    - mtl
-    - regex-base
-    - regex-compat
-    - regex-posix
-    - stm
-    - text
-    - unordered-containers
+    - AtCoderDevHs
     ghc-options:
-    -  -rtsopts
+    - -rtsopts
     - -threaded
     - -with-rtsopts=-N
     main: Main.hs
@@ -68,26 +36,22 @@ ghc-options: -Wall
 github: no-moree-ria10/AtCoderDevHs
 library:
   dependencies:
-# for test and benchmark ###
-    -  tasty
-    -  tasty-hspec
-    - criterion
-#### end  ####
-    - tasty-hspec
-    - base
-    - array
-    - bytestring
-    - containers
-    - deepseq
-    - async
-    - attoparsec
-    - mtl
-    - regex-base
-    - regex-compat
-    - regex-posix
-    - stm
-    - text
-    - unordered-containers
+  - base
+  - tasty
+  - tasty-hspec
+  - array
+  - bytestring
+  - containers
+  - deepseq
+  - async
+  - attoparsec
+  - mtl
+  - regex-base
+  - regex-compat
+  - regex-posix
+  - stm
+  - text
+  - unordered-containers
   source-dirs: library
 license: MIT
 maintainer: OtaTakuma
@@ -96,24 +60,10 @@ synopsis: A new Haskeleton package.
 tests:
   AtCoderDevHs-test-suite:
     dependencies:
-    -  base
-    -  AtCoderDevHs
-    -  tasty
-    -  tasty-hspec
-    - array
-    - bytestring
-    - containers
-    - deepseq
-    - async
-    - attoparsec
-    - mtl
-    - regex-base
-    - regex-compat
-    - regex-posix
-    - stm
-    - text
-    - unordered-containers
-    - vector
+    - base
+    - AtCoderDevHs
+    - tasty
+    - tasty-hspec
     ghc-options:
     - -rtsopts
     - -threaded
