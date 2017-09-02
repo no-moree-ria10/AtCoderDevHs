@@ -24,6 +24,9 @@ import Prelude hiding(
   words
   )
 
+-- standard library
+import Control.Monad.ST
+
 
 -- bytestring
 
@@ -38,13 +41,22 @@ import Prelude hiding(
 
 
 -- text
-import Data.Text.IO as TIO
-import Data.Text as T
+import Data.Text.Lazy.IO as TIO
+import Data.Text.Lazy as T
+import Data.Text.Lazy.Read as TR
+
+-- import Data.Text.IO as TIO
+-- import Data.Text as T
+-- import Data.Text.Read as TR
+
+
+
 -- unordered-containers
 
 
 -- vectors
 import Data.Vector.Unboxed as UV
+import Data.Vector.Unboxed.Mutable as MV
 
 
 -- mtl
