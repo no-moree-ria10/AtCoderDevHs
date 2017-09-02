@@ -53,6 +53,7 @@ library:
   - text
   - unordered-containers
   - vector
+  - primitive
   source-dirs: library
 license: MIT
 maintainer: OtaTakuma
