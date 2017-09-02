@@ -1,5 +1,6 @@
 -- extension section
-
+{-# LANGUAGE BangPatterns #-}
+{-# LANGUAGE OverloadedStrings #-} 
 -- not supported extension
 --{-# LANGUAGE Strict, StrictData #-}
 
@@ -40,6 +41,7 @@ import Data.Text as T
 
 
 -- vectors
+import Data.Vector.Unboxed as UV
 
 
 -- mtl

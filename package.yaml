@@ -52,6 +52,7 @@ library:
   - stm
   - text
   - unordered-containers
+  - vector
   source-dirs: library
 license: MIT
 maintainer: OtaTakuma

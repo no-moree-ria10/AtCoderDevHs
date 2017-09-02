@@ -89,6 +89,9 @@ extra-deps:
 - tf-random-0.5
 
 - logict-0.6.0.2
+
+- vector-0.12.0.1
+
 # Override default flag values for local packages and extra-deps
 flags: {}
 
