@@ -1,5 +1,5 @@
 -- extension section
-
+{-# LANGUAGE Strict, StrictData #-}
 
 
 module ContestMain where
@@ -10,6 +10,13 @@ module ContestMain where
 --    import A.B.C( function name )  ...
 -- or import A.B.C 
 
+--
+import Prelude hiding(
+  getLine,
+  getContents,
+  lines,
+  words
+  )
 
 
 -- bytestring
@@ -25,8 +32,8 @@ module ContestMain where
 
 
 -- text
-
-
+import Data.Text.IO as TIO
+import Data.Text as T
 -- unordered-containers
 
 
@@ -38,15 +45,15 @@ module ContestMain where
 -- main section     --
 -- @@@@@@@@@@@@@@@@@--
 
-
 main :: IO ()
 main = do
   input <- getInput
-  putStr . show . getAnswer $ input 
+  Prelude.putStr . show . getAnswer $ input 
 
 -- main :: IO()
 -- main = do
---   putStr $ show getInputAndAnser
+--   answer <- getInputandanser
+--   putStr . show $ answer
 
 
 -- @@@@@@@@@@@@@@@@@@@@@--
@@ -72,10 +79,12 @@ getAnswer :: Input -> Answer
 getAnswer = undefined
 
 
+getInputAndAnser :: IO Answer
+getInputAndAnser = undefined
+
 
 -- @@@@@@@@@@@@@@@@@@@@@@@@@@--
--- question uniqu section    --
--- ( need to self write)     --
+-- question unique section    --
 -- @@@@@@@@@@@@@@@@@@@@@@@@@@--
 
 
@@ -85,3 +94,11 @@ getAnswer = undefined
 -- @@@@@@@@@@@@@@@@@--
 -- util section     --
 -- @@@@@@@@@@@@@@@@@--
+
+-- standard Input Function
+gLine :: IO Text
+gLine = getLine
+
+gContents :: IO Text
+gContents = getContents
+
