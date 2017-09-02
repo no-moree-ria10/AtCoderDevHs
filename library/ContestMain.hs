@@ -1,6 +1,9 @@
 -- extension section
-{-# LANGUAGE BangPatterns #-}
-{-# LANGUAGE OverloadedStrings #-} 
+{-# OPTIONS_GHC -O2 -funbox-strict-fields #-}
+{-# LANGUAGE BangPatterns      #-}
+{-# LANGUAGE CPP               #-}
+{-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE TupleSections     #-}
 -- not supported extension
 --{-# LANGUAGE Strict, StrictData #-}
 
