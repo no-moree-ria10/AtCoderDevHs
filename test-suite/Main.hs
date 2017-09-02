@@ -19,10 +19,7 @@ spec :: Spec
 spec = parallel $ do
     it "AnswerTest1" $ do
         (CM.getAnswer testInp1) `shouldBe` testAns1
-
-
-
-
+    
 
 
 testInp1 :: CM.Input

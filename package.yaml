@@ -85,6 +85,11 @@ description: AtCoderDevHs is a new Haskeleton package.
 executables:
   AtCoderDevHs:
     dependencies:
+# for test and benchmark ###
+    -  tasty
+    -  tasty-hspec
+    - criterion
+#### end  ####
     - AtCoderDevHs
     - array
     - base
@@ -170,6 +175,12 @@ github: no-moree-ria10/AtCoderDevHs
 library:
   dependencies:
     - array
+# for test and benchmark ###
+    -  tasty
+    -  tasty-hspec
+    - criterion
+#### end  ####
+    - tasty-hspec
     - base
     - bytestring
     - Cabal
