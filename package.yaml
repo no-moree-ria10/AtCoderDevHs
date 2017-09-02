@@ -10,12 +10,9 @@ benchmarks:
     - array
     - base
     - bytestring
-    - Cabal
     - containers
     - deepseq
     - directory
-    - extensible-exceptions
-    - filepath
 #    - haskell2010
 #    - haskell98
     - hpc
@@ -31,21 +28,18 @@ benchmarks:
     - xhtml
     - async
     - attoparsec
-    - call-stack
     - case-insensitive
     - cgi
     - exceptions
-    - fgl
-    - fixed
+#    - fgl
 #    - GLURaw
 #    - GLUT
     - half
     - hashable
-    - haskell-src
+#    - haskell-src
     - html
 #    - HTTP
     - HUnit
-    - integer-logarithms
     - mtl
     - multipart
 #    - network
@@ -61,7 +55,7 @@ benchmarks:
     - regex-base
     - regex-compat
     - regex-posix
-    - scientific
+#    - scientific
     - split
     - StateVar
     - stm
@@ -73,7 +67,7 @@ benchmarks:
     - unordered-containers
     - vector
 #    - xhtml
-    - zlib
+#    - zlib
     ghc-options:
     - -rtsopts
     - -threaded
@@ -94,12 +88,9 @@ executables:
     - array
     - base
     - bytestring
-    - Cabal
     - containers
     - deepseq
     - directory
-    - extensible-exceptions
-    - filepath
 #    - haskell2010
 #    - haskell98
     - hpc
@@ -112,24 +103,17 @@ executables:
     - transformers
 #    - unix
 #    - Win32
-    - xhtml
     - async
     - attoparsec
-    - call-stack
     - case-insensitive
-    - cgi
     - exceptions
-    - fgl
-    - fixed
 #    - GLURaw
 #    - GLUT
     - half
     - hashable
-    - haskell-src
     - html
 #    - HTTP
     - HUnit
-    - integer-logarithms
     - mtl
     - multipart
 #    - network
@@ -145,7 +129,6 @@ executables:
     - regex-base
     - regex-compat
     - regex-posix
-    - scientific
     - split
     - StateVar
     - stm
@@ -157,7 +140,6 @@ executables:
     - unordered-containers
     - vector
 #    - xhtml
-    - zlib
     ghc-options:
     -  -rtsopts
     - -threaded
@@ -183,12 +165,9 @@ library:
     - tasty-hspec
     - base
     - bytestring
-    - Cabal
     - containers
     - deepseq
     - directory
-    - extensible-exceptions
-    - filepath
 #    - haskell2010
 #    - haskell98
     - hpc
@@ -201,24 +180,17 @@ library:
     - transformers
 #    - unix
 #    - Win32
-    - xhtml
     - async
     - attoparsec
-    - call-stack
     - case-insensitive
     - cgi
     - exceptions
-    - fgl
-    - fixed
 #    - GLURaw
 #    - GLUT
     - half
     - hashable
-    - haskell-src
-    - html
 #    - HTTP
     - HUnit
-    - integer-logarithms
     - mtl
     - multipart
 #    - network
@@ -246,7 +218,6 @@ library:
     - unordered-containers
     - vector
 #    - xhtml
-    - zlib
   source-dirs: library
 license: MIT
 maintainer: OtaTakuma
@@ -261,12 +232,9 @@ tests:
     -  tasty-hspec
     - array
     - bytestring
-    - Cabal
     - containers
     - deepseq
     - directory
-    - extensible-exceptions
-    - filepath
 #    - haskell2010
 #    - haskell98
     - hpc
@@ -279,24 +247,16 @@ tests:
     - transformers
 #    - unix
 #    - Win32
-    - xhtml
     - async
     - attoparsec
-    - call-stack
     - case-insensitive
-    - cgi
     - exceptions
-    - fgl
-    - fixed
 #    - GLURaw
 #    - GLUT
     - half
     - hashable
-    - haskell-src
-    - html
 #    - HTTP
     - HUnit
-    - integer-logarithms
     - mtl
     - multipart
 #    - network
@@ -324,7 +284,6 @@ tests:
     - unordered-containers
     - vector
 #    - xhtml
-    - zlib
     ghc-options:
     - -rtsopts
     - -threaded
