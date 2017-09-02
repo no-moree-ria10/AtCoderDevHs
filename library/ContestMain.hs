@@ -56,6 +56,7 @@ data Input = I (Int,[Int])
   deriving(Show)
 
 data Answer = Yes | No
+  deriving(Eq)
 
 instance Show Answer where
   show = undefined
@@ -70,10 +71,13 @@ getInput = undefined
 getAnswer :: Input -> Answer 
 getAnswer = undefined
 
+
+
 -- @@@@@@@@@@@@@@@@@@@@@@@@@@--
 -- question uniqu section    --
 -- ( need to self write)     --
 -- @@@@@@@@@@@@@@@@@@@@@@@@@@--
+
 
 
 
