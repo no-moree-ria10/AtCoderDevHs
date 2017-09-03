@@ -17,7 +17,7 @@ module ContestMain where
 -- or import A.B.C 
 
 --
-import Prelude hiding(
+import           Prelude hiding(
   getLine,
   getContents,
   lines,
@@ -25,10 +25,14 @@ import Prelude hiding(
   )
 
 -- standard library
-import Control.Monad.ST
+import           Control.Monad.ST
+import           Control.Applicative
+import           Data.Char
 
 
 -- bytestring
+import qualified Data.ByteString.Char8       as B
+import qualified Data.ByteString.Unsafe      as B
 
 
 -- containers
@@ -41,9 +45,9 @@ import Control.Monad.ST
 
 
 -- text
-import Data.Text.Lazy.IO as TIO
-import Data.Text.Lazy as T
-import Data.Text.Lazy.Read as TR
+import           Data.Text.Lazy.IO as TIO
+import           Data.Text.Lazy as T
+import           Data.Text.Lazy.Read as TR
 
 -- import Data.Text.IO as TIO
 -- import Data.Text as T
@@ -55,8 +59,8 @@ import Data.Text.Lazy.Read as TR
 
 
 -- vectors
-import Data.Vector.Unboxed as UV
-import Data.Vector.Unboxed.Mutable as MV
+import           Data.Vector.Unboxed as UV
+import           Data.Vector.Unboxed.Mutable as MV
 
 
 -- mtl
@@ -123,3 +127,6 @@ gLine = getLine
 gContents :: IO Text
 gContents = getContents
 
+-- intVectorFromline 5  ("1 2 3 4 5") -> vector <1,2,3,4,5> 
+intVectorFromLine ::Int -> IO ( Vector Int )
+intVectorFromLine n = UV.unfoldrN n (B.readInt.B.dropWhile isSpace) <$> B.getLine
