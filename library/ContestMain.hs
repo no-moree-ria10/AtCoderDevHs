@@ -4,7 +4,7 @@
 {-# LANGUAGE CPP               #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE TupleSections     #-}
--- not supported extension
+ -- not supported extension
 --{-# LANGUAGE Strict, StrictData #-}
 
 
@@ -130,3 +130,11 @@ gContents = getContents
 -- intVectorFromline 5  ("1 2 3 4 5") -> vector <1,2,3,4,5> 
 intVectorFromLine ::Int -> IO ( Vector Int )
 intVectorFromLine n = UV.unfoldrN n (B.readInt.B.dropWhile isSpace) <$> B.getLine
+
+pairFromLine :: IO (Int,Int)
+pairFromLine = do
+  v <- intVectorFromLine 2
+  return ( v ! 0, v ! 1)
+
+generatePairVectorFromLine :: Int -> IO ( Vector (Int, Int) )
+generatePairVectorFromLine n = generateM n (const pairFromLine)
