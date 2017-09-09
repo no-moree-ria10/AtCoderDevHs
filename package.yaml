@@ -66,6 +66,7 @@ tests:
     - AtCoderDevHs
     - tasty
     - tasty-hspec
+    - vector
     ghc-options:
     - -rtsopts
     - -threaded
